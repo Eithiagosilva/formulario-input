@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="#" method="post">
+      <div id="name">
+        <label for="fname">Nome:</label><br />
+        <input type="text" id="fname" name="fname" required />
+      </div>
+
+      <br />
+
+      <div id="mail">
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <br />
+
+      <div id="tele">
+        <label for="phone">WhatsApp:</label>
+        <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        />
+      </div>
+
+      <br />
+
+      <div id="check">
+        <p>Área de atuação:</p>
+
+        <input type="radio" id="dev" name="fav_language" value="dev" required />
+        <label for="html">Desenvolvimento</label><br />
+        <input type="radio" id="qa" name="fav_language" value="qa" required />
+        <label for="css">Quality Assurance (QA)</label><br />
+        <input type="radio" id="ads" name="fav_language" value="ads" required />
+        <label for="ads"> Análise de Dados</label>
+        <input
+          type="radio"
+          id="infra"
+          name="fav_language"
+          value="infra"
+          required
+        />
+        <label for="ads"> Infraestrutura</label>
+      </div>
+
+      <br />
+
+      <div id="box">
+        <p>Observações:</p>
+
+        <textarea id="obs" name="obs_box" cols="40" rows="4"></textarea>
+        <br />
+      </div>
+
+      <br />
+      <input type="checkbox" id="ofertas" name="ofertas" checked required />
+      <label for="ofertas">Desejo receber novidades e ofertas por email.</label>
+
+      <br />
+      <button type="”submit”">Enviar</button>
+    </form>
+  </body>
+</html>
